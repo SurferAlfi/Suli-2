@@ -1,0 +1,61 @@
+//számítsuk ki az első 100 szám összegét
+            int szum = 0;
+            for (int i = 1; i < 101; i++)
+            {
+                szum = szum + i;
+            }
+            Console.WriteLine("Az első 100 szám összege: {0}", szum);
+            - - - 
+            
+            - - -
+            //elöltesztelő ciklus
+            int i = 0;
+            while (i < 10)
+            {
+                Console.WriteLine("Kata");
+                i++;
+            }
+            - - -
+            
+            - - -
+            //hátultesztelő ciklus
+            int i = 1;
+            do
+            {
+                Console.WriteLine("Kata");
+                i++;
+            }
+            while (i < 10);
+            - - -
+            
+            - - -
+            
+            //Számtani sorozat alsó, felső határának bekérése, összegének kiszámítása.
+            int also, felso;
+            Console.WriteLine("Adja meg a sorozat alsó és felső határait!");
+            also = int.Parse(Console.ReadLine());
+            felso = int.Parse(Console.ReadLine());
+            int szum = 0, i;
+            for (i = also; i <= felso; i++)
+            {
+                szum = szum + i;
+            }
+            Console.WriteLine("A sorozat tagjainak összege: {0}", szum);
+            - - -
+            
+            - - -
+            //Számítsuk ki egy bekért szám faktoriálisát.
+            int szam;
+            double fakt = 1;
+            Console.WriteLine("Adjon meg egy számot!");
+            szam = Convert.ToInt32(Console.ReadLine());
+            for (int i = 2
+                ; i <= szam; i++)
+            {
+                fakt = fakt * i;
+            }
+            Console.WriteLine("A/z {0} faktoriálisa: {1}", szam, fakt);
+            - - -
+            
+            - - -
+            
