@@ -58,4 +58,32 @@
             - - -
             
             - - -
+            //Határozzuk meg mennyi valódi osztója van a bekért számnak. Írjuk ki, hogy primszám, vagy nem
+            //prímszám a megadott szám.
+
+            int szam, oszt = 0;
+            Console.WriteLine("Adjon meg egy számot!");
+            szam = Convert.ToInt32(Console.ReadLine());
+            for (int i = 2; i <= szam / 2; i++)
+            {
+                if (szam % i == 0) oszt++;
+            }
+            Console.WriteLine("{0} valódi osztóinak száma: {1}", szam, oszt);
+            if (oszt == 0)
+                Console.WriteLine("A szám prímszám.");
+            else Console.WriteLine("A szám nem prímszám.");
+            - - - 
             
+            - - -
+            //Határozzuk meg heti átlaghőmérsékletet.
+            int homerseklet, ossz = 1;
+            for (int i = 1; i < 8; i++)
+            {
+                Console.WriteLine("Adja meg a/z {0}. napi hőmérsékletet!", i);
+                homerseklet = int.Parse(Console.ReadLine());
+                ossz = ossz + homerseklet;
+            }
+            Console.WriteLine("A heti átlaghőmérséklet: {0}", (float)ossz / 7);
+            - - -
+            
+            - - -
